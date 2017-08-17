@@ -8,10 +8,16 @@
 
 import Foundation
 
-//MARK: Login View Controller
+//MARK: Login
 let LoginButtonText = "Login"
 let LoginUsernamePlaceholder = "Username"
 let LoginPasswordPlaceholder = "Password"
+
+//MARK: Home
+let HomeTitle = "Home"
+
+//MARK: New Report
+let NewReportTitle = "New Report"
 
 //MARK: Alert View Controller
 let AlertViewInvalidUsername = "Username must be at least 8 alphabetic characters."

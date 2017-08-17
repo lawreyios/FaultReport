@@ -17,6 +17,11 @@ class FRNewReportViewController: UIViewController {
         return container.resolve(FRViewControllerFactory.self)
     }()
     
+    override var title: String? {
+        get { return NewReportTitle }
+        set { super.title = title }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

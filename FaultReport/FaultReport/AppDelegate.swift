@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        Container.loggingFunction = nil
+        
         let container = Container()
         container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
         viewControllerFactory = container.resolve(FRViewControllerFactory.self)

@@ -17,6 +17,12 @@ class FRHomeViewController: UIViewController {
         return container.resolve(FRViewControllerFactory.self)
     }()
     
+    override var title: String? {
+        get { return HomeTitle }
+        set { super.title = title }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
