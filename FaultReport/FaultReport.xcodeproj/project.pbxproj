@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */; };
+		AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */; };
 		ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95731F45D15400C4D025 /* AppDelegate.swift */; };
-		ABAC95761F45D15400C4D025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95751F45D15400C4D025 /* ViewController.swift */; };
 		ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */; };
 		ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957A1F45D15500C4D025 /* Assets.xcassets */; };
 		ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */; };
@@ -17,7 +18,6 @@
 		ABAC958C1F45DA2600C4D025 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */; };
 		ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */; };
 		ABAC95AE1F45DCD600C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
-		ABAC95B21F45DD3600C4D025 /* FRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95B11F45DD3600C4D025 /* FRConstants.swift */; };
 		ABAC95B71F45E11700C4D025 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
 		ABAC95B81F45E11700C4D025 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABAC95BB1F45E15A00C4D025 /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -31,6 +31,8 @@
 		ABAC95EA1F45E54500C4D025 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95E21F45E52000C4D025 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABAC96091F45E60100C4D025 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
 		ABAC960A1F45E60300C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
+		ABAC961B1F45EF5A00C4D025 /* FRStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */; };
+		ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC961C1F45F0FC00C4D025 /* FRLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,9 +84,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAlertViewHelper.swift; sourceTree = "<group>"; };
+		AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		ABAC95701F45D15400C4D025 /* FaultReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaultReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC95731F45D15400C4D025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABAC95751F45D15400C4D025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABAC95781F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FRLoginViewController.storyboard; sourceTree = "<group>"; };
 		ABAC957A1F45D15500C4D025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAC957D1F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,13 +98,14 @@
 		ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRViewControllerFactory.swift; sourceTree = "<group>"; };
 		ABAC95AD1F45DCD600C4D025 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swinject.framework; sourceTree = "<group>"; };
 		ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwinjectStoryboard.framework; sourceTree = "<group>"; };
-		ABAC95B11F45DD3600C4D025 /* FRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRConstants.swift; sourceTree = "<group>"; };
 		ABAC95D31F45E4AA00C4D025 /* FaultReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaultReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC95D71F45E4AA00C4D025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAC95DE1F45E4C900C4D025 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		ABAC95E01F45E50C00C4D025 /* FaultReportTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaultReportTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABAC95E11F45E52000C4D025 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../FaultReport/Nimble.framework; sourceTree = "<group>"; };
 		ABAC95E21F45E52000C4D025 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../FaultReport/Quick.framework; sourceTree = "<group>"; };
+		ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRStringConstants.swift; sourceTree = "<group>"; };
+		ABAC961C1F45F0FC00C4D025 /* FRLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0FEBAF1F45F900009CAA4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */,
+				AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */,
+				ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AB8465F51F45FB4E00DA9AA4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		AB8465F81F45FD8B00DA9AA4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC961C1F45F0FC00C4D025 /* FRLoginView.swift */,
+				ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */,
+				ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		ABAC95671F45D15400C4D025 = {
 			isa = PBXGroup;
 			children = (
@@ -151,12 +183,10 @@
 		ABAC95721F45D15400C4D025 /* FaultReport */ = {
 			isa = PBXGroup;
 			children = (
-				ABAC95B11F45DD3600C4D025 /* FRConstants.swift */,
-				ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */,
 				ABAC95731F45D15400C4D025 /* AppDelegate.swift */,
-				ABAC95751F45D15400C4D025 /* ViewController.swift */,
-				ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */,
-				ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */,
+				AB8465F51F45FB4E00DA9AA4 /* Extension */,
+				AB0FEBAF1F45F900009CAA4D /* Helpers */,
+				AB8465F81F45FD8B00DA9AA4 /* Login */,
 				ABAC95881F45D9FA00C4D025 /* Resources */,
 				ABAC95871F45D9EE00C4D025 /* Frameworks */,
 			);
@@ -312,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAC95761F45D15400C4D025 /* ViewController.swift in Sources */,
-				ABAC95B21F45DD3600C4D025 /* FRConstants.swift in Sources */,
+				ABAC961B1F45EF5A00C4D025 /* FRStringConstants.swift in Sources */,
+				AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */,
+				ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
+				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
 				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
 			);
@@ -547,6 +579,7 @@
 				ABAC95841F45D15500C4D025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABAC95DA1F45E4AA00C4D025 /* Build configuration list for PBXNativeTarget "FaultReportTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +588,7 @@
 				ABAC95DC1F45E4AA00C4D025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

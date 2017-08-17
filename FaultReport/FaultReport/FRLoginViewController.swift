@@ -11,30 +11,27 @@ import Swinject
 
 class FRLoginViewController: UIViewController {
     
-    let container = Container()
+    var viewControllerFactory: FRViewControllerFactory! = {
+        let container = Container()
+        container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
+        return container.resolve(FRViewControllerFactory.self)
+    }()
     
-    var viewControllerFactory: FRViewControllerFactory!
-
+    @IBOutlet var loginView: FRLoginView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
-        viewControllerFactory = container.resolve(FRViewControllerFactory.self)
+        setupView()
+    }
+    
+    private func setupView() {
+        loginView.delegate = self
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let vc = viewControllerFactory.viewControllerFor(controllerClass: FRLoginViewController.self)
+}
+
+extension FRLoginViewController: FRLoginViewDelegate {
+    func didTapLogin() {
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
