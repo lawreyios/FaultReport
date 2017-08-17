@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import Swinject
 
 class FRHomeViewController: UIViewController {
-
+    
+    var viewControllerFactory: FRViewControllerFactory! = {
+        let container = Container()
+        container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
+        return container.resolve(FRViewControllerFactory.self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
@@ -22,6 +29,7 @@ class FRHomeViewController: UIViewController {
     }
     
     func onAddReport() {
-        
+        let newReportScreen = viewControllerFactory.viewControllerFor(controllerClass: FRNewReportViewController.self) as! FRNewReportViewController
+        navigationController?.pushViewController(newReportScreen, animated: true)
     }
 }
