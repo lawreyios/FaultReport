@@ -12,6 +12,7 @@
 		ABAC95791F45D15500C4D025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* Main.storyboard */; };
 		ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957A1F45D15500C4D025 /* Assets.xcassets */; };
 		ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */; };
+		ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ABAC957A1F45D15500C4D025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAC957D1F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABAC957F1F45D15500C4D025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				ABAC95731F45D15400C4D025 /* AppDelegate.swift */,
 				ABAC95751F45D15400C4D025 /* ViewController.swift */,
+				ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */,
 				ABAC95771F45D15500C4D025 /* Main.storyboard */,
 				ABAC957A1F45D15500C4D025 /* Assets.xcassets */,
 				ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */,
@@ -96,8 +99,7 @@
 				TargetAttributes = {
 					ABAC956F1F45D15400C4D025 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5U4MH93EC9;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAC95761F45D15400C4D025 /* ViewController.swift in Sources */,
+				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,11 +264,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaultReport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +278,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaultReport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
