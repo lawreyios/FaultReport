@@ -15,5 +15,11 @@ class FRViewControllerFactory: NSObject {
         let controllerClassName = String(describing: controllerClass)
         return SwinjectStoryboard.create(name: String(describing: controllerClass), bundle: nil).instantiateViewController(withIdentifier: controllerClassName)
     }
+    
+    func mainNavigationController(with rootViewController: UIViewController) -> FRMainNavigationController {
+        let navigationController = SwinjectStoryboard.create(name: String(describing: FRMainNavigationController.self), bundle: nil).instantiateViewController(withIdentifier: "FRMainNavigationController") as! FRMainNavigationController
+        navigationController.viewControllers = [rootViewController]
+        return navigationController
+    }
 
 }

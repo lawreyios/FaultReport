@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */; };
 		AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */; };
+		AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */; };
+		AB8466001F45FE0F00DA9AA4 /* FRHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8465FF1F45FE0F00DA9AA4 /* FRHomeViewController.storyboard */; };
+		AB8466021F45FEAF00DA9AA4 /* FRMainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8466011F45FEAF00DA9AA4 /* FRMainNavigationController.swift */; };
+		AB8466041F45FEE900DA9AA4 /* FRMainNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8466031F45FEE900DA9AA4 /* FRMainNavigationController.storyboard */; };
 		ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95731F45D15400C4D025 /* AppDelegate.swift */; };
 		ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */; };
 		ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957A1F45D15500C4D025 /* Assets.xcassets */; };
@@ -86,6 +90,10 @@
 /* Begin PBXFileReference section */
 		AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAlertViewHelper.swift; sourceTree = "<group>"; };
 		AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRHomeViewController.swift; path = FaultReport/FRHomeViewController.swift; sourceTree = "<group>"; };
+		AB8465FF1F45FE0F00DA9AA4 /* FRHomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FRHomeViewController.storyboard; sourceTree = "<group>"; };
+		AB8466011F45FEAF00DA9AA4 /* FRMainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRMainNavigationController.swift; sourceTree = "<group>"; };
+		AB8466031F45FEE900DA9AA4 /* FRMainNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FRMainNavigationController.storyboard; sourceTree = "<group>"; };
 		ABAC95701F45D15400C4D025 /* FaultReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaultReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC95731F45D15400C4D025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABAC95781F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FRLoginViewController.storyboard; sourceTree = "<group>"; };
@@ -162,6 +170,18 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		AB8465FE1F45FDFA00DA9AA4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AB8466011F45FEAF00DA9AA4 /* FRMainNavigationController.swift */,
+				AB8466031F45FEE900DA9AA4 /* FRMainNavigationController.storyboard */,
+				AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */,
+				AB8465FF1F45FE0F00DA9AA4 /* FRHomeViewController.storyboard */,
+			);
+			name = Home;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		ABAC95671F45D15400C4D025 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +207,7 @@
 				AB8465F51F45FB4E00DA9AA4 /* Extension */,
 				AB0FEBAF1F45F900009CAA4D /* Helpers */,
 				AB8465F81F45FD8B00DA9AA4 /* Login */,
+				AB8465FE1F45FDFA00DA9AA4 /* Home */,
 				ABAC95881F45D9FA00C4D025 /* Resources */,
 				ABAC95871F45D9EE00C4D025 /* Frameworks */,
 			);
@@ -324,6 +345,8 @@
 			files = (
 				ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */,
 				ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */,
+				AB8466001F45FE0F00DA9AA4 /* FRHomeViewController.storyboard in Resources */,
+				AB8466041F45FEE900DA9AA4 /* FRMainNavigationController.storyboard in Resources */,
 				ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +370,9 @@
 				ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
+				AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
+				AB8466021F45FEAF00DA9AA4 /* FRMainNavigationController.swift in Sources */,
 				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
