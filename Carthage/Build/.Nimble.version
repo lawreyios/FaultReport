@@ -1,7 +1,7 @@
 {
   "iOS" : [
     {
-      "hash" : "cc1a6ec4a68d682ec6b4f6f5d5e5fc6bd3506a0bfea084ff20e4e844a5aed787",
+      "hash" : "5c52f248522c81b236fd2354bda2ee580ff6bf794afe3e2c97c9277110a4a85b",
       "name" : "Nimble"
     }
   ],
@@ -11,13 +11,13 @@
   ],
   "tvOS" : [
     {
-      "hash" : "bd23a3a53a377c4b0ec5d1a4543241d040dd17af84786069fda684c41de31adc",
+      "hash" : "8c604e98463a79947150f1916875de7bb0379300bfebad3c0ba07aa036bf5c40",
       "name" : "Nimble"
     }
   ],
   "Mac" : [
     {
-      "hash" : "5707ba6f6963783c80dde32d00d1433170eb90e1a8c254ec37edeb99fb7fdad9",
+      "hash" : "304a480f823374352cc0e605adafd562c72d1765301c90073055e8f0b7466159",
       "name" : "Nimble"
     }
   ]

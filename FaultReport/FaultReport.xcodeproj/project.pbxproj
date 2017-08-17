@@ -9,21 +9,99 @@
 /* Begin PBXBuildFile section */
 		ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95731F45D15400C4D025 /* AppDelegate.swift */; };
 		ABAC95761F45D15400C4D025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95751F45D15400C4D025 /* ViewController.swift */; };
-		ABAC95791F45D15500C4D025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* Main.storyboard */; };
+		ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */; };
 		ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957A1F45D15500C4D025 /* Assets.xcassets */; };
 		ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */; };
 		ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */; };
+		ABAC958B1F45DA2600C4D025 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95891F45DA2600C4D025 /* Realm.framework */; };
+		ABAC958C1F45DA2600C4D025 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */; };
+		ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */; };
+		ABAC95AE1F45DCD600C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
+		ABAC95B21F45DD3600C4D025 /* FRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95B11F45DD3600C4D025 /* FRConstants.swift */; };
+		ABAC95B71F45E11700C4D025 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
+		ABAC95B81F45E11700C4D025 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95BB1F45E15A00C4D025 /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95BC1F45E17400C4D025 /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95BD1F45E18300C4D025 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95891F45DA2600C4D025 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95BE1F45E18300C4D025 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95DF1F45E4C900C4D025 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95DE1F45E4C900C4D025 /* AppDelegateSpec.swift */; };
+		ABAC95E51F45E52200C4D025 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95E11F45E52000C4D025 /* Nimble.framework */; };
+		ABAC95E61F45E52200C4D025 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95E21F45E52000C4D025 /* Quick.framework */; };
+		ABAC95E91F45E54500C4D025 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95E11F45E52000C4D025 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC95EA1F45E54500C4D025 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95E21F45E52000C4D025 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAC96091F45E60100C4D025 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
+		ABAC960A1F45E60300C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABAC95D81F45E4AA00C4D025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABAC95681F45D15400C4D025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABAC956F1F45D15400C4D025;
+			remoteInfo = FaultReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABAC95B91F45E11700C4D025 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ABAC95B81F45E11700C4D025 /* SwinjectStoryboard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC95BA1F45E14B00C4D025 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ABAC95BD1F45E18300C4D025 /* Realm.framework in CopyFiles */,
+				ABAC95BE1F45E18300C4D025 /* RealmSwift.framework in CopyFiles */,
+				ABAC95BC1F45E17400C4D025 /* Swinject.framework in CopyFiles */,
+				ABAC95BB1F45E15A00C4D025 /* SwinjectStoryboard.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC95E81F45E53B00C4D025 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ABAC95E91F45E54500C4D025 /* Nimble.framework in CopyFiles */,
+				ABAC95EA1F45E54500C4D025 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ABAC95701F45D15400C4D025 /* FaultReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaultReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC95731F45D15400C4D025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABAC95751F45D15400C4D025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABAC95781F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABAC95781F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FRLoginViewController.storyboard; sourceTree = "<group>"; };
 		ABAC957A1F45D15500C4D025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAC957D1F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABAC957F1F45D15500C4D025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRLoginViewController.swift; sourceTree = "<group>"; };
+		ABAC95891F45DA2600C4D025 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRViewControllerFactory.swift; sourceTree = "<group>"; };
+		ABAC95AD1F45DCD600C4D025 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swinject.framework; sourceTree = "<group>"; };
+		ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		ABAC95B11F45DD3600C4D025 /* FRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRConstants.swift; sourceTree = "<group>"; };
+		ABAC95D31F45E4AA00C4D025 /* FaultReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaultReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAC95D71F45E4AA00C4D025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABAC95DE1F45E4C900C4D025 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
+		ABAC95E01F45E50C00C4D025 /* FaultReportTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaultReportTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABAC95E11F45E52000C4D025 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../FaultReport/Nimble.framework; sourceTree = "<group>"; };
+		ABAC95E21F45E52000C4D025 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../FaultReport/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +109,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAC95B71F45E11700C4D025 /* SwinjectStoryboard.framework in Frameworks */,
+				ABAC95AE1F45DCD600C4D025 /* Swinject.framework in Frameworks */,
+				ABAC958C1F45DA2600C4D025 /* RealmSwift.framework in Frameworks */,
+				ABAC958B1F45DA2600C4D025 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC95D01F45E4AA00C4D025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC95E61F45E52200C4D025 /* Quick.framework in Frameworks */,
+				ABAC960A1F45E60300C4D025 /* Swinject.framework in Frameworks */,
+				ABAC95E51F45E52200C4D025 /* Nimble.framework in Frameworks */,
+				ABAC96091F45E60100C4D025 /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAC95721F45D15400C4D025 /* FaultReport */,
+				ABAC95D41F45E4AA00C4D025 /* FaultReportTests */,
 				ABAC95711F45D15400C4D025 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				ABAC95701F45D15400C4D025 /* FaultReport.app */,
+				ABAC95D31F45E4AA00C4D025 /* FaultReportTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +151,57 @@
 		ABAC95721F45D15400C4D025 /* FaultReport */ = {
 			isa = PBXGroup;
 			children = (
+				ABAC95B11F45DD3600C4D025 /* FRConstants.swift */,
+				ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */,
 				ABAC95731F45D15400C4D025 /* AppDelegate.swift */,
 				ABAC95751F45D15400C4D025 /* ViewController.swift */,
 				ABAC95851F45D35A00C4D025 /* FRLoginViewController.swift */,
-				ABAC95771F45D15500C4D025 /* Main.storyboard */,
+				ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */,
+				ABAC95881F45D9FA00C4D025 /* Resources */,
+				ABAC95871F45D9EE00C4D025 /* Frameworks */,
+			);
+			path = FaultReport;
+			sourceTree = "<group>";
+		};
+		ABAC95871F45D9EE00C4D025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */,
+				ABAC95AD1F45DCD600C4D025 /* Swinject.framework */,
+				ABAC95891F45DA2600C4D025 /* Realm.framework */,
+				ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABAC95881F45D9FA00C4D025 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ABAC957A1F45D15500C4D025 /* Assets.xcassets */,
 				ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */,
 				ABAC957F1F45D15500C4D025 /* Info.plist */,
 			);
-			path = FaultReport;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ABAC95D41F45E4AA00C4D025 /* FaultReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC95D71F45E4AA00C4D025 /* Info.plist */,
+				ABAC95DE1F45E4C900C4D025 /* AppDelegateSpec.swift */,
+				ABAC95E01F45E50C00C4D025 /* FaultReportTests-Bridging-Header.h */,
+				ABAC95E71F45E52700C4D025 /* Frameworks */,
+			);
+			path = FaultReportTests;
+			sourceTree = "<group>";
+		};
+		ABAC95E71F45E52700C4D025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABAC95E11F45E52000C4D025 /* Nimble.framework */,
+				ABAC95E21F45E52000C4D025 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +214,8 @@
 				ABAC956C1F45D15400C4D025 /* Sources */,
 				ABAC956D1F45D15400C4D025 /* Frameworks */,
 				ABAC956E1F45D15400C4D025 /* Resources */,
+				ABAC95B91F45E11700C4D025 /* Embed Frameworks */,
+				ABAC95BA1F45E14B00C4D025 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -86,6 +225,25 @@
 			productName = FaultReport;
 			productReference = ABAC95701F45D15400C4D025 /* FaultReport.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ABAC95D21F45E4AA00C4D025 /* FaultReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABAC95DA1F45E4AA00C4D025 /* Build configuration list for PBXNativeTarget "FaultReportTests" */;
+			buildPhases = (
+				ABAC95CF1F45E4AA00C4D025 /* Sources */,
+				ABAC95D01F45E4AA00C4D025 /* Frameworks */,
+				ABAC95D11F45E4AA00C4D025 /* Resources */,
+				ABAC95E81F45E53B00C4D025 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABAC95D91F45E4AA00C4D025 /* PBXTargetDependency */,
+			);
+			name = FaultReportTests;
+			productName = FaultReportTests;
+			productReference = ABAC95D31F45E4AA00C4D025 /* FaultReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +258,13 @@
 					ABAC956F1F45D15400C4D025 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Manual;
+					};
+					ABAC95D21F45E4AA00C4D025 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5U4MH93EC9;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABAC956F1F45D15400C4D025;
 					};
 				};
 			};
@@ -117,6 +282,7 @@
 			projectRoot = "";
 			targets = (
 				ABAC956F1F45D15400C4D025 /* FaultReport */,
+				ABAC95D21F45E4AA00C4D025 /* FaultReportTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +294,14 @@
 			files = (
 				ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */,
 				ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */,
-				ABAC95791F45D15500C4D025 /* Main.storyboard in Resources */,
+				ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC95D11F45E4AA00C4D025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,20 +313,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAC95761F45D15400C4D025 /* ViewController.swift in Sources */,
+				ABAC95B21F45DD3600C4D025 /* FRConstants.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
+				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABAC95CF1F45E4AA00C4D025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAC95DF1F45E4C900C4D025 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		ABAC95D91F45E4AA00C4D025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABAC956F1F45D15400C4D025 /* FaultReport */;
+			targetProxy = ABAC95D81F45E4AA00C4D025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		ABAC95771F45D15500C4D025 /* Main.storyboard */ = {
+		ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ABAC95781F45D15500C4D025 /* Base */,
 			);
-			name = Main.storyboard;
+			name = FRLoginViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */ = {
@@ -265,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaultReport",
+				);
 				INFOPLIST_FILE = FaultReport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReport;
@@ -279,12 +474,57 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaultReport",
+				);
 				INFOPLIST_FILE = FaultReport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ABAC95DB1F45E4AA00C4D025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaultReport",
+				);
+				INFOPLIST_FILE = FaultReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaultReportTests/FaultReportTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaultReport.app/FaultReport";
+			};
+			name = Debug;
+		};
+		ABAC95DC1F45E4AA00C4D025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaultReport",
+				);
+				INFOPLIST_FILE = FaultReportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.FaultReportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaultReportTests/FaultReportTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaultReport.app/FaultReport";
 			};
 			name = Release;
 		};
@@ -305,6 +545,14 @@
 			buildConfigurations = (
 				ABAC95831F45D15500C4D025 /* Debug */,
 				ABAC95841F45D15500C4D025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABAC95DA1F45E4AA00C4D025 /* Build configuration list for PBXNativeTarget "FaultReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABAC95DB1F45E4AA00C4D025 /* Debug */,
+				ABAC95DC1F45E4AA00C4D025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

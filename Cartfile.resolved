@@ -1,3 +1,5 @@
 github "Quick/Nimble" "v7.0.1"
 github "Quick/Quick" "v1.1.0"
+github "Swinject/Swinject" "2.1.1"
+github "Swinject/SwinjectStoryboard" "1.1.1"
 github "realm/realm-cocoa" "v2.9.1"

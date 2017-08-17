@@ -1,0 +1,24 @@
+{
+  "iOS" : [
+    {
+      "hash" : "8dd6390c9069b984d524955361fa48272427fb0839e5859750121a95b06b9218",
+      "name" : "SwinjectStoryboard"
+    }
+  ],
+  "commitish" : "1.1.1",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "hash" : "9257015f002a30d22667a2f93f1b83bd229276de002a27c907445262d134dac1",
+      "name" : "SwinjectStoryboard"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "64a264b68f54ec336bbd16611180dc205de700099e95b790970a9e8e52bb4522",
+      "name" : "SwinjectStoryboard"
+    }
+  ]
+}

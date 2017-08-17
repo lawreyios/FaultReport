@@ -7,20 +7,25 @@
 //
 
 import UIKit
+import Swinject
 
 class FRLoginViewController: UIViewController {
+    
+    let container = Container()
+    
+    var viewControllerFactory: FRViewControllerFactory!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
+        viewControllerFactory = container.resolve(FRViewControllerFactory.self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let vc = viewControllerFactory.viewControllerFor(controllerClass: FRLoginViewController.self)
+        
     }
-    
 
     /*
     // MARK: - Navigation
