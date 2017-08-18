@@ -16,4 +16,8 @@ extension String {
     var isAtLeast8Characters: Bool {
         return characters.count >= 8
     }
+    
+    var isEmpty: Bool {
+        return characters.count == 0
+    }
 }

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m7v-1Y-dLT">
-                                <rect key="frame" x="36" y="40" width="303" height="240"/>
+                                <rect key="frame" x="36" y="40" width="303" height="315"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eRz-JN-Hil">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="50"/>
@@ -88,9 +88,23 @@
                                             <constraint firstAttribute="height" constant="100" id="lCO-eq-62M"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09G-KQ-2ti">
+                                        <rect key="frame" x="0.0" y="260" width="303" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="303" id="WYl-54-L0A"/>
+                                            <constraint firstAttribute="height" constant="55" id="asU-CH-wWl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSubmit:" destination="6yP-vi-M4U" eventType="touchUpInside" id="5i8-ml-i7h"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="IZZ-sY-6gn"/>
+                                    <constraint firstAttribute="height" constant="315" id="IZZ-sY-6gn"/>
                                     <constraint firstItem="Lgz-U0-kEX" firstAttribute="width" secondItem="Ymh-di-Ayb" secondAttribute="width" id="MaH-7o-Ioq"/>
                                     <constraint firstItem="Fhs-aB-cNS" firstAttribute="width" secondItem="zNo-cX-M2M" secondAttribute="width" id="Vz2-Fv-3Dc"/>
                                     <constraint firstItem="49T-Hw-6cy" firstAttribute="width" secondItem="zNo-cX-M2M" secondAttribute="width" id="uzd-8c-TBC"/>
@@ -103,7 +117,15 @@
                             <constraint firstItem="m7v-1Y-dLT" firstAttribute="top" secondItem="ePm-EQ-xOs" secondAttribute="bottom" constant="20" id="lgM-dm-LI2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m7v-1Y-dLT" secondAttribute="trailing" constant="20" id="v0x-R2-wbQ"/>
                         </constraints>
+                        <connections>
+                            <outlet property="descriptionTextView" destination="RLn-Te-rUX" id="gIa-HA-zY7"/>
+                            <outlet property="locationTextField" destination="Lgz-U0-kEX" id="IK8-ix-Z4l"/>
+                            <outlet property="nameTextField" destination="Ymh-di-Ayb" id="YUy-IH-Gsb"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="newReportView" destination="6yP-vi-M4U" id="Jg8-NN-U6N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfC-Qc-m1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

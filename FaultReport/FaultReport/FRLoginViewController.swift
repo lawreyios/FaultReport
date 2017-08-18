@@ -31,7 +31,7 @@ class FRLoginViewController: UIViewController {
 }
 
 extension FRLoginViewController: FRLoginViewDelegate {
-    func didTapLogin() {
+    func loginViewDidLoginSuccess() {
         if let homeScreen = viewControllerFactory.viewControllerFor(controllerClass: FRHomeViewController.self) {
             let navigationController = viewControllerFactory.mainNavigationController(with: homeScreen)
             present(navigationController, animated: true, completion: nil)

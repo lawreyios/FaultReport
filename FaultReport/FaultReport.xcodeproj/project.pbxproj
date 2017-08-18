@@ -40,6 +40,11 @@
 		ABAC960A1F45E60300C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
 		ABAC961B1F45EF5A00C4D025 /* FRStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */; };
 		ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC961C1F45F0FC00C4D025 /* FRLoginView.swift */; };
+		ABB86D6B1F47550B00CD311C /* IncidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB86D6A1F47550B00CD311C /* IncidentModel.swift */; };
+		ABB86D7B1F475BAA00CD311C /* IncidentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB86D7A1F475BAA00CD311C /* IncidentViewModel.swift */; };
+		ABB86D7E1F475D5E00CD311C /* FRHomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB86D7D1F475D5E00CD311C /* FRHomeViewController+TableView.swift */; };
+		ABB86D801F475F4300CD311C /* FRIncidentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB86D7F1F475F4300CD311C /* FRIncidentTableViewCell.swift */; };
+		ABEBDCD11F4761750079F403 /* FRRealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEBDCD01F4761750079F403 /* FRRealmHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +125,11 @@
 		ABAC95E21F45E52000C4D025 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../FaultReport/Quick.framework; sourceTree = "<group>"; };
 		ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRStringConstants.swift; sourceTree = "<group>"; };
 		ABAC961C1F45F0FC00C4D025 /* FRLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRLoginView.swift; sourceTree = "<group>"; };
+		ABB86D6A1F47550B00CD311C /* IncidentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncidentModel.swift; sourceTree = "<group>"; };
+		ABB86D7A1F475BAA00CD311C /* IncidentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncidentViewModel.swift; path = ../IncidentViewModel.swift; sourceTree = "<group>"; };
+		ABB86D7D1F475D5E00CD311C /* FRHomeViewController+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FRHomeViewController+TableView.swift"; sourceTree = "<group>"; };
+		ABB86D7F1F475F4300CD311C /* FRIncidentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRIncidentTableViewCell.swift; sourceTree = "<group>"; };
+		ABEBDCD01F4761750079F403 /* FRRealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRRealmHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,7 @@
 				ABAC961A1F45EF5900C4D025 /* FRStringConstants.swift */,
 				AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */,
 				ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */,
+				ABEBDCD01F4761750079F403 /* FRRealmHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -182,7 +193,9 @@
 				AB8466011F45FEAF00DA9AA4 /* FRMainNavigationController.swift */,
 				AB8466031F45FEE900DA9AA4 /* FRMainNavigationController.storyboard */,
 				AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */,
+				ABB86D7D1F475D5E00CD311C /* FRHomeViewController+TableView.swift */,
 				AB8465FF1F45FE0F00DA9AA4 /* FRHomeViewController.storyboard */,
+				ABB86D7F1F475F4300CD311C /* FRIncidentTableViewCell.swift */,
 			);
 			name = Home;
 			path = ..;
@@ -191,9 +204,9 @@
 		AB8466051F46011000DA9AA4 /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				AB84660A1F4601F400DA9AA4 /* FRNewReportView.swift */,
 				AB8466061F46017700DA9AA4 /* FRNewReportViewController.swift */,
 				AB8466081F46018900DA9AA4 /* FRNewReportViewController.storyboard */,
-				AB84660A1F4601F400DA9AA4 /* FRNewReportView.swift */,
 			);
 			name = Report;
 			sourceTree = "<group>";
@@ -219,6 +232,8 @@
 		ABAC95721F45D15400C4D025 /* FaultReport */ = {
 			isa = PBXGroup;
 			children = (
+				ABB86D7C1F475C4F00CD311C /* ViewModel */,
+				ABB86D691F4754DC00CD311C /* DataModel */,
 				ABAC95731F45D15400C4D025 /* AppDelegate.swift */,
 				AB8465F51F45FB4E00DA9AA4 /* Extension */,
 				AB0FEBAF1F45F900009CAA4D /* Helpers */,
@@ -270,6 +285,22 @@
 				ABAC95E21F45E52000C4D025 /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABB86D691F4754DC00CD311C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABB86D6A1F47550B00CD311C /* IncidentModel.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		ABB86D7C1F475C4F00CD311C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABB86D7A1F475BAA00CD311C /* IncidentViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,15 +415,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAC961B1F45EF5A00C4D025 /* FRStringConstants.swift in Sources */,
+				ABB86D7E1F475D5E00CD311C /* FRHomeViewController+TableView.swift in Sources */,
+				ABB86D6B1F47550B00CD311C /* IncidentModel.swift in Sources */,
+				ABB86D801F475F4300CD311C /* FRIncidentTableViewCell.swift in Sources */,
 				AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */,
 				AB8466071F46017700DA9AA4 /* FRNewReportViewController.swift in Sources */,
 				ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */,
+				ABEBDCD11F4761750079F403 /* FRRealmHelper.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
 				AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
 				AB8466021F45FEAF00DA9AA4 /* FRMainNavigationController.swift in Sources */,
 				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
+				ABB86D7B1F475BAA00CD311C /* IncidentViewModel.swift in Sources */,
 				AB84660B1F4601F400DA9AA4 /* FRNewReportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

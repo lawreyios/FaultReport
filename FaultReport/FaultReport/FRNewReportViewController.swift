@@ -22,13 +22,20 @@ class FRNewReportViewController: UIViewController {
         set { super.title = title }
     }
     
+    @IBOutlet var newReportView: FRNewReportView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
     }
     
     private func setupView() {
-        self.title = "New Report"
+        newReportView.delegate = self
     }
+}
 
+extension FRNewReportViewController: FRNewReportViewDelegate {
+    func newReportViewDidAddNewReportSuccess() {
+        navigationController?.popViewController(animated: true)
+    }
 }

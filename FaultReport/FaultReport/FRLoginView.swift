@@ -9,13 +9,13 @@
 import UIKit
 import Swinject
 
-enum InputFieldsError: Error {
+enum LoginInputFieldsError: Error {
     case InvalidUsername
     case InvalidPassword
 }
 
 protocol FRLoginViewDelegate {
-    func didTapLogin()
+    func loginViewDidLoginSuccess()
 }
 
 class FRLoginView: UIView {
@@ -41,24 +41,27 @@ class FRLoginView: UIView {
     @IBAction func onLogin(_ sender: UIButton) {
         do {
             try verifyInputFields()
-        } catch InputFieldsError.InvalidUsername {
+        } catch LoginInputFieldsError.InvalidUsername {
             alertViewHelper.showAlertWithMessage(AlertViewInvalidUsername, from: delegate as! UIViewController)
-        } catch InputFieldsError.InvalidPassword {
+            return
+        } catch LoginInputFieldsError.InvalidPassword {
             alertViewHelper.showAlertWithMessage(AlertViewInvalidPassword, from: delegate as! UIViewController)
+            return
         } catch {
             alertViewHelper.showAlertWithMessage(AlertViewInvalidInputs, from: delegate as! UIViewController)
+            return
         }
         
-        delegate?.didTapLogin()
+        delegate?.loginViewDidLoginSuccess()
     }
     
     private func verifyInputFields() throws {
         guard let username = usernameTextField.text,
             username.isAtLeast8Characters,
-            username.isAlphabetic else { throw InputFieldsError.InvalidUsername }
+            username.isAlphabetic else { throw LoginInputFieldsError.InvalidUsername }
         
         guard let password = passwordTextField.text,
-            password.isAtLeast8Characters else { throw InputFieldsError.InvalidPassword }
+            password.isAtLeast8Characters else { throw LoginInputFieldsError.InvalidPassword }
     }
     
 }
