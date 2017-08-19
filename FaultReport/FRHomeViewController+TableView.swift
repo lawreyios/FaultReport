@@ -10,7 +10,7 @@ import UIKit
 
 extension FRHomeViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModels.count
+        return isFiltering ? filteredViewModels.count : viewModels.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,7 +23,7 @@ extension FRHomeViewController: UITableViewDataSource {
 
 fileprivate extension FRHomeViewController {
     func viewModel(for indexPath: IndexPath) -> IncidentViewModel {
-        return viewModels[indexPath.row]
+        return isFiltering ? filteredViewModels[indexPath.row] : viewModels[indexPath.row]
     }
     
     func configure(cell: UITableViewCell, viewModel: IncidentViewModel) {

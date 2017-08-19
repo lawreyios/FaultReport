@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0225931F487DF10057578C /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0225921F487DF10057578C /* Swinject.framework */; };
+		AB0225941F487E060057578C /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
+		AB0225951F487E060057578C /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB02259C1F487F800057578C /* AvenirNext-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB0225961F487F800057578C /* AvenirNext-DemiBold.otf */; };
+		AB02259F1F487F800057578C /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB0225991F487F800057578C /* AvenirLTStd-Book.otf */; };
+		AB0225A01F487F800057578C /* AvenirLTStd-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB02259A1F487F800057578C /* AvenirLTStd-Heavy.otf */; };
+		AB0225A21F487F990057578C /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A11F487F990057578C /* UIFont+Extensions.swift */; };
+		AB0225A41F48831E0057578C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A31F48831E0057578C /* UIColor+Extensions.swift */; };
+		AB0225A61F4884480057578C /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A51F4884480057578C /* UITextField+Extensions.swift */; };
+		AB0225A81F4885180057578C /* UIButton+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A71F4885180057578C /* UIButton+Extenions.swift */; };
 		AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */; };
 		AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */; };
 		AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */; };
@@ -27,10 +37,6 @@
 		ABAC958B1F45DA2600C4D025 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95891F45DA2600C4D025 /* Realm.framework */; };
 		ABAC958C1F45DA2600C4D025 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */; };
 		ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC958D1F45DBCD00C4D025 /* FRViewControllerFactory.swift */; };
-		ABAC95AE1F45DCD600C4D025 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; };
-		ABAC95B71F45E11700C4D025 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; };
-		ABAC95B81F45E11700C4D025 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABAC95BB1F45E15A00C4D025 /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AF1F45DCDA00C4D025 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABAC95BC1F45E17400C4D025 /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95AD1F45DCD600C4D025 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABAC95BD1F45E18300C4D025 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC95891F45DA2600C4D025 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABAC95BE1F45E18300C4D025 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAC958A1F45DA2600C4D025 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -61,27 +67,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ABAC95B91F45E11700C4D025 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				ABAC95B81F45E11700C4D025 /* SwinjectStoryboard.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ABAC95BA1F45E14B00C4D025 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AB0225951F487E060057578C /* SwinjectStoryboard.framework in CopyFiles */,
 				ABAC95BD1F45E18300C4D025 /* Realm.framework in CopyFiles */,
 				ABAC95BE1F45E18300C4D025 /* RealmSwift.framework in CopyFiles */,
 				ABAC95BC1F45E17400C4D025 /* Swinject.framework in CopyFiles */,
-				ABAC95BB1F45E15A00C4D025 /* SwinjectStoryboard.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +94,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB0225921F487DF10057578C /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		AB0225961F487F800057578C /* AvenirNext-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNext-DemiBold.otf"; sourceTree = "<group>"; };
+		AB0225991F487F800057578C /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
+		AB02259A1F487F800057578C /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; };
+		AB0225A11F487F990057578C /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		AB0225A31F48831E0057578C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		AB0225A51F4884480057578C /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		AB0225A71F4885180057578C /* UIButton+Extenions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extenions.swift"; sourceTree = "<group>"; };
 		AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAlertViewHelper.swift; sourceTree = "<group>"; };
 		AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRHomeViewController.swift; path = FaultReport/FRHomeViewController.swift; sourceTree = "<group>"; };
@@ -143,8 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAC95B71F45E11700C4D025 /* SwinjectStoryboard.framework in Frameworks */,
-				ABAC95AE1F45DCD600C4D025 /* Swinject.framework in Frameworks */,
+				AB0225941F487E060057578C /* SwinjectStoryboard.framework in Frameworks */,
+				AB0225931F487DF10057578C /* Swinject.framework in Frameworks */,
 				ABAC958C1F45DA2600C4D025 /* RealmSwift.framework in Frameworks */,
 				ABAC958B1F45DA2600C4D025 /* Realm.framework in Frameworks */,
 			);
@@ -164,6 +167,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0225911F487DF10057578C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0225921F487DF10057578C /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB02259B1F487F800057578C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AB0225961F487F800057578C /* AvenirNext-DemiBold.otf */,
+				AB0225991F487F800057578C /* AvenirLTStd-Book.otf */,
+				AB02259A1F487F800057578C /* AvenirLTStd-Heavy.otf */,
+			);
+			name = Fonts;
+			path = ../../../2359Media/Wesley/Wesley/Wesley;
+			sourceTree = "<group>";
+		};
 		AB0FEBAF1F45F900009CAA4D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +203,11 @@
 				AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */,
 				AB9774051F47EAF100B1F4B0 /* Date+Extensions.swift */,
 				AB9774031F47EAD200B1F4B0 /* DateFormatter+Extensions.swift */,
+				AB0225A51F4884480057578C /* UITextField+Extensions.swift */,
 				AB9774071F47EC2600B1F4B0 /* UITextView+Extensions.swift */,
+				AB0225A11F487F990057578C /* UIFont+Extensions.swift */,
+				AB0225A31F48831E0057578C /* UIColor+Extensions.swift */,
+				AB0225A71F4885180057578C /* UIButton+Extenions.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -226,6 +252,7 @@
 				ABAC95721F45D15400C4D025 /* FaultReport */,
 				ABAC95D41F45E4AA00C4D025 /* FaultReportTests */,
 				ABAC95711F45D15400C4D025 /* Products */,
+				AB0225911F487DF10057578C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +296,7 @@
 		ABAC95881F45D9FA00C4D025 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB02259B1F487F800057578C /* Fonts */,
 				ABAC957A1F45D15500C4D025 /* Assets.xcassets */,
 				ABAC957C1F45D15500C4D025 /* LaunchScreen.storyboard */,
 				ABAC957F1F45D15500C4D025 /* Info.plist */,
@@ -322,7 +350,6 @@
 				ABAC956C1F45D15400C4D025 /* Sources */,
 				ABAC956D1F45D15400C4D025 /* Frameworks */,
 				ABAC956E1F45D15400C4D025 /* Resources */,
-				ABAC95B91F45E11700C4D025 /* Embed Frameworks */,
 				ABAC95BA1F45E14B00C4D025 /* CopyFiles */,
 			);
 			buildRules = (
@@ -401,8 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABAC957E1F45D15500C4D025 /* LaunchScreen.storyboard in Resources */,
+				AB02259F1F487F800057578C /* AvenirLTStd-Book.otf in Resources */,
 				ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */,
+				AB02259C1F487F800057578C /* AvenirNext-DemiBold.otf in Resources */,
 				AB8466001F45FE0F00DA9AA4 /* FRHomeViewController.storyboard in Resources */,
+				AB0225A01F487F800057578C /* AvenirLTStd-Heavy.otf in Resources */,
 				AB8466041F45FEE900DA9AA4 /* FRMainNavigationController.storyboard in Resources */,
 				ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */,
 				AB8466091F46018900DA9AA4 /* FRNewReportViewController.storyboard in Resources */,
@@ -427,12 +457,15 @@
 				ABB86D7E1F475D5E00CD311C /* FRHomeViewController+TableView.swift in Sources */,
 				ABB86D6B1F47550B00CD311C /* IncidentModel.swift in Sources */,
 				ABB86D801F475F4300CD311C /* FRIncidentTableViewCell.swift in Sources */,
+				AB0225A41F48831E0057578C /* UIColor+Extensions.swift in Sources */,
 				AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */,
 				AB8466071F46017700DA9AA4 /* FRNewReportViewController.swift in Sources */,
 				ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */,
 				ABEBDCD11F4761750079F403 /* FRRealmHelper.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
+				AB0225A81F4885180057578C /* UIButton+Extenions.swift in Sources */,
 				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
+				AB0225A61F4884480057578C /* UITextField+Extensions.swift in Sources */,
 				AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */,
 				AB9774081F47EC2600B1F4B0 /* UITextView+Extensions.swift in Sources */,
 				AB9774061F47EAF100B1F4B0 /* Date+Extensions.swift in Sources */,
@@ -441,6 +474,7 @@
 				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
 				ABB86D7B1F475BAA00CD311C /* IncidentViewModel.swift in Sources */,
 				AB84660B1F4601F400DA9AA4 /* FRNewReportView.swift in Sources */,
+				AB0225A21F487F990057578C /* UIFont+Extensions.swift in Sources */,
 				AB9774041F47EAD200B1F4B0 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

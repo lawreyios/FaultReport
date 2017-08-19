@@ -19,6 +19,12 @@ class FRHomeViewController: UIViewController {
         }
     }
     
+    var filteredViewModels = [IncidentViewModel]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     var viewControllerFactory: FRViewControllerFactory! = {
         let container = Container()
         container.register(FRViewControllerFactory.self) { _ in FRViewControllerFactory() }
@@ -31,6 +37,16 @@ class FRHomeViewController: UIViewController {
         return container.resolve(FRRealmHelper.self)
     }()
     
+    var searchController: UISearchController! = {
+        let container = Container()
+        container.register(UISearchController.self) { _ in UISearchController(searchResultsController: nil) }
+        return container.resolve(UISearchController.self)
+    }()
+    
+    var isFiltering: Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
     override var title: String? {
         get { return HomeTitle }
         set { super.title = title }
@@ -40,6 +56,7 @@ class FRHomeViewController: UIViewController {
         super.viewDidLoad()
         setupNavigationBar()
         setupTableView()
+        setupSearchController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,18 +66,40 @@ class FRHomeViewController: UIViewController {
     
     private func setupNavigationBar() {
         let addBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddReport))
-        addBarButton.tintColor = UIColor.black
+        addBarButton.tintColor = UIColor.white
         navigationItem.rightBarButtonItem = addBarButton
     }
     
     private func setupTableView() {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+    }
+    
+    private func setupSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
     }
     
     func onAddReport() {
         let newReportScreen = viewControllerFactory.viewControllerFor(controllerClass: FRNewReportViewController.self) as! FRNewReportViewController
         navigationController?.pushViewController(newReportScreen, animated: true)
+    }
+    
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterViewModelsForSearchText(_ searchText: String) {
+        filteredViewModels = viewModels.filter({( viewModel : IncidentViewModel) -> Bool in
+            return viewModel.machineName.lowercased().contains(searchText.lowercased()) ||
+                viewModel.incidentID.lowercased().contains(searchText.lowercased()) ||
+                viewModel.location.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
     }
 }
 
@@ -75,10 +114,17 @@ fileprivate extension FRHomeViewController {
         for model in models {
             let newViewModel = IncidentViewModel(incidentID: model.incidentID,
                                                  machineName: model.machineName,
+                                                 location: model.location,
                                                  dateCreated: model.dateCreated)
             viewModels.append(newViewModel)
         }
         
         return viewModels
+    }
+}
+
+extension FRHomeViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterViewModelsForSearchText(searchController.searchBar.text!)
     }
 }

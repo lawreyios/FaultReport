@@ -15,5 +15,6 @@ protocol IncidentViewModelConfigurable: class {
 public struct IncidentViewModel {
     var incidentID: String
     var machineName: String
+    var location: String
     var dateCreated: Date
 }

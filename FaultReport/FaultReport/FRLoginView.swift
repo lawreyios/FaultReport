@@ -20,9 +20,9 @@ protocol FRLoginViewDelegate {
 
 class FRLoginView: UIView {
     
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var usernameTextField: RoundedTextField!
+    @IBOutlet weak var passwordTextField: RoundedTextField!
+    @IBOutlet weak var loginButton: RoundedButton!
     
     var delegate: FRLoginViewDelegate?
     
@@ -36,6 +36,8 @@ class FRLoginView: UIView {
         super.awakeFromNib()
         self.usernameTextField.placeholder = LoginUsernamePlaceholder
         self.passwordTextField.placeholder = LoginPasswordPlaceholder
+        
+        
     }
     
     @IBAction func onLogin(_ sender: UIButton) {

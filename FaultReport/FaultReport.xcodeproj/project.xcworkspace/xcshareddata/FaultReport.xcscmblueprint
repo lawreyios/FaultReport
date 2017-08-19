@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4496A184C82ECEDEC5CA7E0A8B3610C8994C511A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D6AEF73F26D0848D4F8282622FDD4E6D160177C" : 9223372036854775807,
+    "4496A184C82ECEDEC5CA7E0A8B3610C8994C511A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CF055282-1142-477B-A115-29811DF20697",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D6AEF73F26D0848D4F8282622FDD4E6D160177C" : "2359Media\/Wesley\/",
+    "4496A184C82ECEDEC5CA7E0A8B3610C8994C511A" : "MSD\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FaultReport",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FaultReport\/FaultReport.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lawreyios\/FaultReport.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4496A184C82ECEDEC5CA7E0A8B3610C8994C511A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/2359media\/Wesley.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D6AEF73F26D0848D4F8282622FDD4E6D160177C"
+    }
+  ]
+}

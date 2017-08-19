@@ -15,7 +15,9 @@ class FRIncidentTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        titleLabel.font = UIFont.h1()
+        subTitleLabel.font = UIFont.h2()
+        dateLabel.font = UIFont.h3()
     }
 }
 
