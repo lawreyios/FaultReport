@@ -23,6 +23,6 @@ extension FRIncidentTableViewCell: IncidentViewModelConfigurable {
     public func configure(viewModel: IncidentViewModel) {
         titleLabel.text = viewModel.incidentID
         subTitleLabel.text = viewModel.machineName
-        dateLabel.text = viewModel.machineName
+        dateLabel.text = viewModel.dateCreated.toString()
     }
 }

@@ -20,10 +20,11 @@ let HomeTitle = "Home"
 let NewReportTitle = "New Report"
 
 //MARK: Alert View Controller
-let AlertViewInvalidUsername = "Username must be at least 8 alphabetic characters."
-let AlertViewInvalidPassword = "Password must be at least 8 characters."
-let AlertViewInvalidInputs = "Please check your username and password again."
-let AlertViewInvalidName = "Name must not be empty"
-let AlertViewInvalidLocation = "Location must not be empty"
-let AlertViewInvalidDescription = "Please write a longer description."
-let AlertViewInvalidNewReportInputs = "Please fill in all the fields."
+let AlertViewInvalidUsernameMessage = "Username must be at least 8 alphabetic characters."
+let AlertViewInvalidPasswordMessage = "Password must be at least 8 characters."
+let AlertViewInvalidInputsMessage = "Please check your username and password again."
+let AlertViewInvalidNameMessage = "Name must not be empty"
+let AlertViewInvalidLocationMessage = "Location must not be empty"
+let AlertViewInvalidDescriptionMessage = "Please write a longer description."
+let AlertViewInvalidNewReportInputsMessage = "Please fill in all the fields."
+

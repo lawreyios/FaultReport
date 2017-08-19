@@ -19,6 +19,8 @@ class FRRealmHelper {
     func getAllIncidents() -> [IncidentModel] {
         do {
             let incidentsResults = try Realm().objects(IncidentModel.self)
+                .sorted(byKeyPath: "dateCreated", ascending: false)
+            
             return incidentsResults.toArray()
         } catch {
             print("Error getting incients!")

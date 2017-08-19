@@ -42,13 +42,13 @@ class FRLoginView: UIView {
         do {
             try verifyInputFields()
         } catch LoginInputFieldsError.InvalidUsername {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidUsername, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidUsernameMessage, from: delegate as! UIViewController)
             return
         } catch LoginInputFieldsError.InvalidPassword {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidPassword, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidPasswordMessage, from: delegate as! UIViewController)
             return
         } catch {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidInputs, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidInputsMessage, from: delegate as! UIViewController)
             return
         }
         

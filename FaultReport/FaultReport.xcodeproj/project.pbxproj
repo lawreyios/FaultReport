@@ -16,6 +16,9 @@
 		AB8466071F46017700DA9AA4 /* FRNewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8466061F46017700DA9AA4 /* FRNewReportViewController.swift */; };
 		AB8466091F46018900DA9AA4 /* FRNewReportViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8466081F46018900DA9AA4 /* FRNewReportViewController.storyboard */; };
 		AB84660B1F4601F400DA9AA4 /* FRNewReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB84660A1F4601F400DA9AA4 /* FRNewReportView.swift */; };
+		AB9774041F47EAD200B1F4B0 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9774031F47EAD200B1F4B0 /* DateFormatter+Extensions.swift */; };
+		AB9774061F47EAF100B1F4B0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9774051F47EAF100B1F4B0 /* Date+Extensions.swift */; };
+		AB9774081F47EC2600B1F4B0 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9774071F47EC2600B1F4B0 /* UITextView+Extensions.swift */; };
 		ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC95731F45D15400C4D025 /* AppDelegate.swift */; };
 		ABAC95791F45D15500C4D025 /* FRLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAC95771F45D15500C4D025 /* FRLoginViewController.storyboard */; };
 		ABAC957B1F45D15500C4D025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAC957A1F45D15500C4D025 /* Assets.xcassets */; };
@@ -105,6 +108,9 @@
 		AB8466061F46017700DA9AA4 /* FRNewReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRNewReportViewController.swift; sourceTree = "<group>"; };
 		AB8466081F46018900DA9AA4 /* FRNewReportViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FRNewReportViewController.storyboard; sourceTree = "<group>"; };
 		AB84660A1F4601F400DA9AA4 /* FRNewReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRNewReportView.swift; sourceTree = "<group>"; };
+		AB9774031F47EAD200B1F4B0 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		AB9774051F47EAF100B1F4B0 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		AB9774071F47EC2600B1F4B0 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
 		ABAC95701F45D15400C4D025 /* FaultReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaultReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAC95731F45D15400C4D025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABAC95781F45D15500C4D025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FRLoginViewController.storyboard; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */,
+				AB9774051F47EAF100B1F4B0 /* Date+Extensions.swift */,
+				AB9774031F47EAD200B1F4B0 /* DateFormatter+Extensions.swift */,
+				AB9774071F47EC2600B1F4B0 /* UITextView+Extensions.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -425,11 +434,14 @@
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
 				AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */,
+				AB9774081F47EC2600B1F4B0 /* UITextView+Extensions.swift in Sources */,
+				AB9774061F47EAF100B1F4B0 /* Date+Extensions.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
 				AB8466021F45FEAF00DA9AA4 /* FRMainNavigationController.swift in Sources */,
 				ABAC958E1F45DBCD00C4D025 /* FRViewControllerFactory.swift in Sources */,
 				ABB86D7B1F475BAA00CD311C /* IncidentViewModel.swift in Sources */,
 				AB84660B1F4601F400DA9AA4 /* FRNewReportView.swift in Sources */,
+				AB9774041F47EAD200B1F4B0 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

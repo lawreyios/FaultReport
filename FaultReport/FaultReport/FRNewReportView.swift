@@ -22,7 +22,7 @@ protocol FRNewReportViewDelegate {
 class FRNewReportView: UIView {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionTextView: BorderedTextView!
     
     var delegate: FRNewReportViewDelegate?
     
@@ -40,16 +40,16 @@ class FRNewReportView: UIView {
         do {
             try verifyInputFields()
         } catch NewReportInputFieldsError.InvalidName {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidUsername, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidUsernameMessage, from: delegate as! UIViewController)
             return
         } catch NewReportInputFieldsError.InvalidLocation {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidPassword, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidPasswordMessage, from: delegate as! UIViewController)
             return
         } catch NewReportInputFieldsError.InvalidDescription {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidDescription, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidDescriptionMessage, from: delegate as! UIViewController)
             return
         } catch {
-            alertViewHelper.showAlertWithMessage(AlertViewInvalidNewReportInputs, from: delegate as! UIViewController)
+            alertViewHelper.showAlertWithMessage(AlertViewInvalidNewReportInputsMessage, from: delegate as! UIViewController)
             return
         }
         
@@ -61,7 +61,10 @@ class FRNewReportView: UIView {
         let newIncidentReport = IncidentModel(machineName: name, desc: description, location: location)
         newIncidentReport.save()
         
-        delegate?.newReportViewDidAddNewReportSuccess()
+        let submittedMessage = String.init(format: "Your report is submitted successfully.\nYour Incident ID is %@", arguments: [newIncidentReport.incidentID!])
+        alertViewHelper.showAlertWithMessage(submittedMessage, from: delegate as! UIViewController) { [weak self] (action) in
+            self?.delegate?.newReportViewDidAddNewReportSuccess()
+        }
     }
     
     private func verifyInputFields() throws {
