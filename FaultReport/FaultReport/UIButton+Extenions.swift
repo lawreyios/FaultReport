@@ -10,6 +10,7 @@ import UIKit
 
 class RoundedButton: UIButton {
     override func draw(_ rect: CGRect) {
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = DefaultCornerRadius
+        self.clipsToBounds = true
     }
 }

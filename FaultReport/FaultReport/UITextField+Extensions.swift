@@ -10,10 +10,32 @@ import UIKit
 
 class RoundedTextField: UITextField {
     override func draw(_ rect: CGRect) {
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = DefaultCornerRadius
         
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.frame.height))
+        let paddingView = UIView(frame: CGRect(x: 0,
+                                               y: 0,
+                                               width: DefaultSpacing,
+                                               height: self.frame.height))
+        
         self.leftView = paddingView
         self.leftViewMode = UITextFieldViewMode.always
+    }
+}
+
+class RoundedBorderedTextField: RoundedTextField {
+    override func draw(_ rect: CGRect) {
+        self.layer.cornerRadius = DefaultCornerRadius
+        
+        let paddingView = UIView(frame: CGRect(x: 0,
+                                               y: 0,
+                                               width: DefaultSpacing,
+                                               height: self.frame.height))
+        
+        self.leftView = paddingView
+        self.leftViewMode = UITextFieldViewMode.always
+        
+        self.layer.borderWidth = DefaultBorderWidth
+        self.layer.borderColor = UIColor.gray.cgColor
+        self.clipsToBounds = true
     }
 }

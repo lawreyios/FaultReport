@@ -17,6 +17,7 @@
 		AB0225A41F48831E0057578C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A31F48831E0057578C /* UIColor+Extensions.swift */; };
 		AB0225A61F4884480057578C /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A51F4884480057578C /* UITextField+Extensions.swift */; };
 		AB0225A81F4885180057578C /* UIButton+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A71F4885180057578C /* UIButton+Extenions.swift */; };
+		AB0225AA1F499B8C0057578C /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A91F499B8C0057578C /* UIConstants.swift */; };
 		AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */; };
 		AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */; };
 		AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */; };
@@ -102,6 +103,7 @@
 		AB0225A31F48831E0057578C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		AB0225A51F4884480057578C /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		AB0225A71F4885180057578C /* UIButton+Extenions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extenions.swift"; sourceTree = "<group>"; };
+		AB0225A91F499B8C0057578C /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAlertViewHelper.swift; sourceTree = "<group>"; };
 		AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRHomeViewController.swift; path = FaultReport/FRHomeViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		AB8465F51F45FB4E00DA9AA4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AB0225A91F499B8C0057578C /* UIConstants.swift */,
 				AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */,
 				AB9774051F47EAF100B1F4B0 /* Date+Extensions.swift */,
 				AB9774031F47EAD200B1F4B0 /* DateFormatter+Extensions.swift */,
@@ -476,6 +479,7 @@
 				AB84660B1F4601F400DA9AA4 /* FRNewReportView.swift in Sources */,
 				AB0225A21F487F990057578C /* UIFont+Extensions.swift in Sources */,
 				AB9774041F47EAD200B1F4B0 /* DateFormatter+Extensions.swift in Sources */,
+				AB0225AA1F499B8C0057578C /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

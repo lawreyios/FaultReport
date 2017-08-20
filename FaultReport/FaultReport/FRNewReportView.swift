@@ -20,8 +20,8 @@ protocol FRNewReportViewDelegate {
 }
 
 class FRNewReportView: UIView {
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var nameTextField: RoundedBorderedTextField!
+    @IBOutlet weak var locationTextField: RoundedBorderedTextField!
     @IBOutlet weak var descriptionTextView: BorderedTextView!
     
     var delegate: FRNewReportViewDelegate?

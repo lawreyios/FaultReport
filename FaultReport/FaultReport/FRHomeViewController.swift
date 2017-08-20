@@ -79,6 +79,7 @@ class FRHomeViewController: UIViewController {
     private func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search incident by ID, name or location ..."
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
     }

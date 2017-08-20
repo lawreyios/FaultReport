@@ -11,8 +11,15 @@ import UIKit
 class BorderedTextView: UITextView {
     
     override func draw(_ rect: CGRect) {
-        self.layer.borderWidth = 1.0;
-        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = DefaultBorderWidth;
+        self.layer.borderColor = UIColor.gray.cgColor
+        
+        self.layer.cornerRadius = DefaultSpacing
+        
+        self.textContainerInset = UIEdgeInsetsMake(DefaultSpacing,
+                                                   DefaultSpacing,
+                                                   DefaultSpacing,
+                                                   DefaultSpacing)
     }
     
     required init?(coder aDecoder: NSCoder) {
