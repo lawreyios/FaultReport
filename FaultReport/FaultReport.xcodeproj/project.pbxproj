@@ -18,6 +18,9 @@
 		AB0225A61F4884480057578C /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A51F4884480057578C /* UITextField+Extensions.swift */; };
 		AB0225A81F4885180057578C /* UIButton+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A71F4885180057578C /* UIButton+Extenions.swift */; };
 		AB0225AA1F499B8C0057578C /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225A91F499B8C0057578C /* UIConstants.swift */; };
+		AB0225AC1F49AABC0057578C /* FREmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225AB1F49AABC0057578C /* FREmptyView.swift */; };
+		AB0225AE1F49AC2A0057578C /* FRHomeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225AD1F49AC2A0057578C /* FRHomeViewControllerSpec.swift */; };
+		AB0225B01F49B8BA0057578C /* FRHomeViewController+SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0225AF1F49B8BA0057578C /* FRHomeViewController+SearchController.swift */; };
 		AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */; };
 		AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */; };
 		AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */; };
@@ -104,6 +107,9 @@
 		AB0225A51F4884480057578C /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		AB0225A71F4885180057578C /* UIButton+Extenions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extenions.swift"; sourceTree = "<group>"; };
 		AB0225A91F499B8C0057578C /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		AB0225AB1F49AABC0057578C /* FREmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FREmptyView.swift; sourceTree = "<group>"; };
+		AB0225AD1F49AC2A0057578C /* FRHomeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRHomeViewControllerSpec.swift; sourceTree = "<group>"; };
+		AB0225AF1F49B8BA0057578C /* FRHomeViewController+SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FRHomeViewController+SearchController.swift"; sourceTree = "<group>"; };
 		AB0FEBAD1F45F8FB009CAA4D /* FRAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAlertViewHelper.swift; sourceTree = "<group>"; };
 		AB8465F61F45FB5E00DA9AA4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRHomeViewController.swift; path = FaultReport/FRHomeViewController.swift; sourceTree = "<group>"; };
@@ -228,10 +234,12 @@
 		AB8465FE1F45FDFA00DA9AA4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AB0225AB1F49AABC0057578C /* FREmptyView.swift */,
 				AB8466011F45FEAF00DA9AA4 /* FRMainNavigationController.swift */,
 				AB8466031F45FEE900DA9AA4 /* FRMainNavigationController.storyboard */,
 				AB8465FC1F45FDF500DA9AA4 /* FRHomeViewController.swift */,
 				ABB86D7D1F475D5E00CD311C /* FRHomeViewController+TableView.swift */,
+				AB0225AF1F49B8BA0057578C /* FRHomeViewController+SearchController.swift */,
 				AB8465FF1F45FE0F00DA9AA4 /* FRHomeViewController.storyboard */,
 				ABB86D7F1F475F4300CD311C /* FRIncidentTableViewCell.swift */,
 			);
@@ -312,6 +320,7 @@
 			children = (
 				ABAC95D71F45E4AA00C4D025 /* Info.plist */,
 				ABAC95DE1F45E4C900C4D025 /* AppDelegateSpec.swift */,
+				AB0225AD1F49AC2A0057578C /* FRHomeViewControllerSpec.swift */,
 				ABAC95E01F45E50C00C4D025 /* FaultReportTests-Bridging-Header.h */,
 				ABAC95E71F45E52700C4D025 /* Frameworks */,
 			);
@@ -464,12 +473,14 @@
 				AB8465F71F45FB5E00DA9AA4 /* String+Extensions.swift in Sources */,
 				AB8466071F46017700DA9AA4 /* FRNewReportViewController.swift in Sources */,
 				ABAC961D1F45F0FC00C4D025 /* FRLoginView.swift in Sources */,
+				AB0225AC1F49AABC0057578C /* FREmptyView.swift in Sources */,
 				ABEBDCD11F4761750079F403 /* FRRealmHelper.swift in Sources */,
 				ABAC95861F45D35A00C4D025 /* FRLoginViewController.swift in Sources */,
 				AB0225A81F4885180057578C /* UIButton+Extenions.swift in Sources */,
 				AB0FEBAE1F45F8FB009CAA4D /* FRAlertViewHelper.swift in Sources */,
 				AB0225A61F4884480057578C /* UITextField+Extensions.swift in Sources */,
 				AB8465FD1F45FDF500DA9AA4 /* FRHomeViewController.swift in Sources */,
+				AB0225B01F49B8BA0057578C /* FRHomeViewController+SearchController.swift in Sources */,
 				AB9774081F47EC2600B1F4B0 /* UITextView+Extensions.swift in Sources */,
 				AB9774061F47EAF100B1F4B0 /* Date+Extensions.swift in Sources */,
 				ABAC95741F45D15400C4D025 /* AppDelegate.swift in Sources */,
@@ -487,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0225AE1F49AC2A0057578C /* FRHomeViewControllerSpec.swift in Sources */,
 				ABAC95DF1F45E4C900C4D025 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,11 @@
 import UIKit
 
 extension FRHomeViewController: UITableViewDataSource {
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return isFiltering ? filteredViewModels.count : viewModels.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = viewModel(for: indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: "FRIncidentTableViewCell", for: indexPath)
         configure(cell: cell, viewModel: item)

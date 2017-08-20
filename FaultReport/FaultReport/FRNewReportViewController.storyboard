@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m7v-1Y-dLT">
-                                <rect key="frame" x="36" y="40" width="303" height="361"/>
+                                <rect key="frame" x="36" y="40" width="303" height="363"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRz-JN-Hil">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="60.5"/>
@@ -55,7 +55,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S3Y-kT-eyd">
-                                        <rect key="frame" x="0.0" y="80.5" width="303" height="60"/>
+                                        <rect key="frame" x="0.0" y="80.5" width="303" height="62"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-cX-M2M">
                                                 <rect key="frame" x="0.0" y="0.0" width="303" height="22"/>
@@ -64,7 +64,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-U0-kEX" customClass="RoundedBorderedTextField" customModule="FaultReport" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="32" width="150" height="28"/>
+                                                <rect key="frame" x="0.0" y="32" width="150" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirLTStd-Book" family="Avenir LT Std" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -75,7 +75,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tK5-Zq-wMq">
-                                        <rect key="frame" x="0.0" y="160.5" width="303" height="125.5"/>
+                                        <rect key="frame" x="0.0" y="162.5" width="303" height="125.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhs-aB-cNS">
                                                 <rect key="frame" x="0.0" y="0.0" width="303" height="23.5"/>
@@ -101,7 +101,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09G-KQ-2ti" customClass="RoundedButton" customModule="FaultReport" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="306" width="303" height="55"/>
+                                        <rect key="frame" x="0.0" y="308" width="303" height="55"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="asU-CH-wWl"/>
@@ -119,6 +119,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="IZZ-sY-6gn"/>
                                     <constraint firstItem="Lgz-U0-kEX" firstAttribute="width" secondItem="Ymh-di-Ayb" secondAttribute="width" id="MaH-7o-Ioq"/>
                                     <constraint firstItem="Fhs-aB-cNS" firstAttribute="width" secondItem="zNo-cX-M2M" secondAttribute="width" id="Vz2-Fv-3Dc"/>
+                                    <constraint firstItem="Lgz-U0-kEX" firstAttribute="height" secondItem="Ymh-di-Ayb" secondAttribute="height" id="eqf-Ja-OFu"/>
                                     <constraint firstItem="49T-Hw-6cy" firstAttribute="width" secondItem="zNo-cX-M2M" secondAttribute="width" id="uzd-8c-TBC"/>
                                 </constraints>
                             </stackView>

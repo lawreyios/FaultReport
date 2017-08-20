@@ -15,7 +15,7 @@ class AppDelegateSpec: QuickSpec {
     override func spec() {
         let subject = AppDelegate()
         
-        describe("AppDelegateSpec") {
+        describe("AppDelegate") {
             context("when app finish launching") {
                 beforeEach {
                     _ = subject.application(UIApplication.shared, didFinishLaunchingWithOptions: nil)

@@ -15,6 +15,7 @@ let LoginPasswordPlaceholder = "Password"
 
 //MARK: Home
 let HomeTitle = "Home"
+let HomeSearchPlaceholderText = "Search incident by ID, name or location ..."
 
 //MARK: New Report
 let NewReportTitle = "New Report"
@@ -28,3 +29,6 @@ let AlertViewInvalidLocationMessage = "Location must not be empty"
 let AlertViewInvalidDescriptionMessage = "Please write a longer description."
 let AlertViewInvalidNewReportInputsMessage = "Please fill in all the fields."
 
+//MARK: Empty View
+let EmptyViewNoResultsText = "No results found."
+let EmptyViewNoIncidentText = "No incident is reported yet."
